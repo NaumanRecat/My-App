@@ -14,7 +14,7 @@ export class Signup extends React.Component {
         }}>
         <TouchableOpacity
           onPress={() => {
-            console.warn('i am ready');
+            this.props.navigation.navigate('SignIn');
           }}>
           <Text
             style={{

@@ -1,9 +1,9 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import {Signup, SignIn} from './src/screen/index';
+import {ScreenNavigator} from './src/navigator/ScreenNavigator';
 
 const App = () => {
-  return <SignIn />;
-  // return <Signup />;
+  return <ScreenNavigator />;
 };
 
 export default App;
