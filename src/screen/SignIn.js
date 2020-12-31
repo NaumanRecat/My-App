@@ -3,18 +3,18 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 
-export class Signup extends React.Component {
+export class SignIn extends React.Component {
   render() {
     return (
       <View
         style={{
           flex: 1,
-          backgroundColor: 'green',
+          backgroundColor: 'blue',
           alignItems: 'center',
         }}>
         <TouchableOpacity
           onPress={() => {
-            console.warn('i am ready');
+            console.warn('i am ready 2');
           }}>
           <Text
             style={{
@@ -22,7 +22,7 @@ export class Signup extends React.Component {
               fontSize: 20,
             }}>
             {' '}
-            Navigation
+            Navigation 1
           </Text>
         </TouchableOpacity>
       </View>
