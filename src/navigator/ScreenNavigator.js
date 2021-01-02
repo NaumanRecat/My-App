@@ -5,6 +5,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {Signup, SignIn} from '../screen/index';
 import {Splash} from '../screen/splash/Splash';
+import {Choose} from '../screen/chooseScreen/Choose';
 
 const Stack = createStackNavigator();
 
@@ -13,6 +14,11 @@ export const ScreenNavigator = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
+          name="Choose"
+          component={Choose}
+          options={{headerShown: false}}
+        />
+        {/* <Stack.Screen
           name="Splash"
           component={Splash}
           options={{headerShown: false}}
@@ -26,7 +32,7 @@ export const ScreenNavigator = () => {
           name="SignIn"
           component={SignIn}
           options={{headerShown: false}}
-        />
+        /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
