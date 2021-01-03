@@ -7,8 +7,13 @@ import {
   widthPercentageToDP as w,
   heightPercentageToDP as h,
 } from 'react-native-responsive-screen';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 export class Choose extends react.Component {
+  markOk = () => {
+    <Icon name={'fitness'} size={h('4%')} color={'black'} />;
+  };
+
   render() {
     return (
       // PARENT VIEW
@@ -119,8 +124,11 @@ export class Choose extends react.Component {
                   width: '15%',
                   backgroundColor: 'orange',
                   borderRadius: h('5%'),
-                  //   justifyContent: 'space-around',
-                }}></View>
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Icon name={'fitness'} size={h('4%')} color={'black'} />
+              </View>
               <Text
                 style={{
                   fontSize: 20,
@@ -154,8 +162,11 @@ export class Choose extends react.Component {
                   width: '15%',
                   backgroundColor: 'orange',
                   borderRadius: h('5%'),
-                  justifyContent: 'space-around',
-                }}></View>
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Icon name={'man'} size={h('4%')} color={'black'} />
+              </View>
               <Text
                 style={{
                   fontSize: 20,
@@ -189,8 +200,11 @@ export class Choose extends react.Component {
                   width: '15%',
                   backgroundColor: 'orange',
                   borderRadius: h('5%'),
-                  justifyContent: 'space-around',
-                }}></View>
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Icon name={'man'} size={h('4%')} color={'black'} />
+              </View>
               <Text
                 style={{
                   fontSize: 20,
@@ -224,8 +238,11 @@ export class Choose extends react.Component {
                   width: '15%',
                   backgroundColor: 'orange',
                   borderRadius: h('5%'),
-                  justifyContent: 'space-around',
-                }}></View>
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Icon name={'fitness-outline'} size={h('4%')} color={'black'} />
+              </View>
               <Text
                 style={{
                   fontSize: 20,
