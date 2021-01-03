@@ -23,6 +23,7 @@ export const ScreenNavigator = () => {
           component={Choose}
           options={{headerShown: false}}
         />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );
