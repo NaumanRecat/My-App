@@ -21,14 +21,14 @@ export class Choose extends react.Component {
         style={{
           height: h('100%'),
           width: '100%',
-          backgroundColor: 'grey',
+          // backgroundColor: 'grey',
         }}>
         {/* SKIP VIEW */}
         <View
           style={{
             height: h('8%'),
             width: '100%',
-            backgroundColor: 'pink',
+            // backgroundColor: 'pink',
             alignItems: 'flex-end',
             justifyContent: 'center',
           }}>
@@ -43,15 +43,15 @@ export class Choose extends react.Component {
         {/* CHOOSE YOUR PLAN */}
         <View
           style={{
-            height: h('8%'),
+            height: h('5%'),
             width: '100%',
-            backgroundColor: 'yellow',
+            // backgroundColor: '#fff3',
             alignItems: 'flex-start',
             justifyContent: 'center',
           }}>
           <Text
             style={{
-              marginLeft: h('2%'),
+              // marginLeft: h('2%'),
               fontSize: 29,
               fontWeight: 'bold',
               color: 'pink',
@@ -62,9 +62,9 @@ export class Choose extends react.Component {
         {/* CHOOSE YOUR PLAN 2ND */}
         <View
           style={{
-            height: h('8%'),
+            height: h('5%'),
             width: '100%',
-            backgroundColor: 'white',
+            // backgroundColor: 'white',
             alignItems: 'flex-start',
             justifyContent: 'center',
             // marginBottom: h('5%'),
@@ -80,9 +80,9 @@ export class Choose extends react.Component {
         </View>
         <View
           style={{
-            height: h('5%'),
+            height: h('8%'),
             width: '100%',
-            backgroundColor: 'blue',
+            // backgroundColor: 'blue',
           }}>
           <Text
             style={{
@@ -103,7 +103,7 @@ export class Choose extends react.Component {
             style={{
               height: h('60%'),
               width: '90%',
-              backgroundColor: 'pink',
+              // backgroundColor: 'pink',
               //   alignItems: 'center',
               justifyContent: 'flex-end',
             }}>
@@ -112,17 +112,18 @@ export class Choose extends react.Component {
               style={{
                 height: h('10%'),
                 width: '100%',
-                backgroundColor: 'yellow',
+                backgroundColor: '#fff1',
                 borderRadius: h('7%'),
                 alignItems: 'center',
                 // justifyContent: 'center',
                 flexDirection: 'row',
+                borderWidth: h('0.1%'),
               }}>
               <View
                 style={{
                   height: h('10%'),
                   width: '15%',
-                  backgroundColor: 'orange',
+                  // backgroundColor: 'orange',
                   borderRadius: h('5%'),
                   justifyContent: 'center',
                   alignItems: 'center',
@@ -141,7 +142,7 @@ export class Choose extends react.Component {
                 style={{
                   height: h('10%'),
                   width: '15%',
-                  backgroundColor: 'orange',
+                  // backgroundColor: 'orange',
                   borderRadius: h('5%'),
                 }}></View>
             </TouchableOpacity>
@@ -150,17 +151,18 @@ export class Choose extends react.Component {
               style={{
                 height: h('10%'),
                 width: '100%',
-                backgroundColor: 'yellow',
+                backgroundColor: '#fff3',
                 borderRadius: h('7%'),
                 alignItems: 'center',
                 // justifyContent: 'center',
                 flexDirection: 'row',
+                borderWidth: h('0.1%'),
               }}>
               <View
                 style={{
                   height: h('10%'),
                   width: '15%',
-                  backgroundColor: 'orange',
+                  // backgroundColor: 'orange',
                   borderRadius: h('5%'),
                   justifyContent: 'center',
                   alignItems: 'center',
@@ -179,7 +181,7 @@ export class Choose extends react.Component {
                 style={{
                   height: h('10%'),
                   width: '15%',
-                  backgroundColor: 'orange',
+                  // backgroundColor: 'orange',
                   borderRadius: h('5%'),
                 }}></View>
             </TouchableOpacity>
@@ -188,17 +190,18 @@ export class Choose extends react.Component {
               style={{
                 height: h('10%'),
                 width: '100%',
-                backgroundColor: 'yellow',
+                backgroundColor: '#fff3',
                 borderRadius: h('7%'),
                 alignItems: 'center',
                 // justifyContent: 'center',
                 flexDirection: 'row',
+                borderWidth: h('0.1%'),
               }}>
               <View
                 style={{
                   height: h('10%'),
                   width: '15%',
-                  backgroundColor: 'orange',
+                  // backgroundColor: 'orange',
                   borderRadius: h('5%'),
                   justifyContent: 'center',
                   alignItems: 'center',
@@ -217,7 +220,7 @@ export class Choose extends react.Component {
                 style={{
                   height: h('10%'),
                   width: '15%',
-                  backgroundColor: 'orange',
+                  // backgroundColor: 'orange',
                   borderRadius: h('5%'),
                 }}></View>
             </TouchableOpacity>
@@ -226,17 +229,18 @@ export class Choose extends react.Component {
               style={{
                 height: h('10%'),
                 width: '100%',
-                backgroundColor: 'yellow',
+                backgroundColor: '#fff3',
                 borderRadius: h('7%'),
                 alignItems: 'center',
                 // justifyContent: 'center',
                 flexDirection: 'row',
+                borderWidth: h('0.1%'),
               }}>
               <View
                 style={{
                   height: h('10%'),
                   width: '15%',
-                  backgroundColor: 'orange',
+                  // backgroundColor: 'orange',
                   borderRadius: h('5%'),
                   justifyContent: 'center',
                   alignItems: 'center',
@@ -255,7 +259,7 @@ export class Choose extends react.Component {
                 style={{
                   height: h('10%'),
                   width: '15%',
-                  backgroundColor: 'orange',
+                  // backgroundColor: 'orange',
                   borderRadius: h('5%'),
                 }}></View>
             </TouchableOpacity>
