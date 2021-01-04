@@ -3,9 +3,9 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import {Signup, SignIn} from '../screen/index';
 import {Splash} from '../screen/splash/Splash';
 import {Choose} from '../screen/chooseScreen/Choose';
+import {FlatChoose} from '../screen/chooseScreen/FlatChoose';
 
 const Stack = createStackNavigator();
 
@@ -13,6 +13,11 @@ export const ScreenNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen
+          name="FlatChoose"
+          component={FlatChoose}
+          options={{headerShown: false}}
+        />
         <Stack.Screen
           name="Splash"
           component={Splash}
@@ -23,7 +28,6 @@ export const ScreenNavigator = () => {
           component={Choose}
           options={{headerShown: false}}
         />
-        
       </Stack.Navigator>
     </NavigationContainer>
   );

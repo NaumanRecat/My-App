@@ -1,6 +1,6 @@
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable react-native/no-inline-styles */
-import react from 'react';
+
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import {
@@ -9,7 +9,7 @@ import {
 } from 'react-native-responsive-screen';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-export class Choose extends react.Component {
+export class Choose extends React.Component  {
   markOk = () => {
     <Icon name={'fitness'} size={h('4%')} color={'black'} />;
   };
