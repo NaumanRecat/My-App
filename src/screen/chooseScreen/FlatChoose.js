@@ -1,3 +1,4 @@
+/* eslint-disable react/self-closing-comp */
 /* eslint-disable react-native/no-inline-styles */
 
 import React from 'react';
@@ -83,6 +84,64 @@ export class FlatChoose extends React.Component {
         sum: 16.0,
       },
     ],
+    data1: [
+      {
+        name: 'A',
+        class: 12,
+      },
+      {
+        name: 'B ',
+        class: 112,
+      },
+      {
+        name: 'C ',
+        class: 12,
+      },
+      {
+        name: 'D',
+        class: 112,
+      },
+      {
+        name: 'E',
+        class: 12,
+      },
+      {
+        name: 'F',
+        class: 112,
+      },
+      {
+        name: 'G',
+        class: 12,
+      },
+      {
+        name: 'H',
+        class: 112,
+      },
+      {
+        name: 'I',
+        class: 12,
+      },
+      {
+        name: 'J',
+        class: 112,
+      },
+      {
+        name: 'K',
+        class: 12,
+      },
+      {
+        name: 'L',
+        class: 112,
+      },
+      {
+        name: 'M',
+        class: 12,
+      },
+      {
+        name: 'N',
+        class: 112,
+      },
+    ],
   };
 
   design = (item) => (
@@ -121,6 +180,21 @@ export class FlatChoose extends React.Component {
         }}>
         <Text style={{marginLeft: h('2%')}}>$: {item.sum}.00</Text>
       </View>
+    </View>
+  );
+
+  design1 = (item) => (
+    <View
+      style={{
+        height: h('9%'),
+        width: w('20%'),
+        // backgroundColor: 'brown',
+        borderRadius: h('2%'),
+        borderWidth: h('0.1%'),
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}>
+      <Text> {item.name}</Text>
     </View>
   );
   render() {
@@ -210,6 +284,21 @@ export class FlatChoose extends React.Component {
             data={this.state.data}
             renderItem={({item}) => this.design(item)}
             keyExtractor={(item) => item.name}
+          />
+        </View>
+        <View
+          style={{
+            height: h('9%'),
+            width: w('90%'),
+            // backgroundColor: 'red',
+            marginTop: h('4%'),
+            borderWidth: h('0.1%'),
+          }}>
+          <FlatList
+            data={this.state.data1}
+            renderItem={({item}) => this.design1(item)}
+            keyExtractor={(item) => item.name}
+            horizontal={true}
           />
         </View>
       </View>

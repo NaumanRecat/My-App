@@ -9,7 +9,12 @@ import {
 } from 'react-native-responsive-screen';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-export class Choose extends React.Component  {
+export class Choose extends React.Component {
+  componentDidMount = () => {
+    setTimeout(() => {
+      this.props.navigation.navigate('FlatChoose');
+    }, 3000);
+  };
   markOk = () => {
     <Icon name={'fitness'} size={h('4%')} color={'black'} />;
   };
