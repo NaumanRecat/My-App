@@ -1,19 +1,11 @@
-/* eslint-disable react/self-closing-comp */
 /* eslint-disable react-native/no-inline-styles */
 
 import React from 'react';
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  FlatList,
-  SafeAreaView,
-} from 'react-native';
+import {View, Text, FlatList, SafeAreaView} from 'react-native';
 import {
   widthPercentageToDP as w,
   heightPercentageToDP as h,
 } from 'react-native-responsive-screen';
-import Icon from 'react-native-vector-icons/Ionicons';
 
 export class FlatChoose extends React.Component {
   state = {
@@ -96,54 +88,35 @@ export class FlatChoose extends React.Component {
   design = (item) => (
     <View
       style={{
-        height: h('10%'),
-        width: '90%',
+        height: h('8%'),
         // backgroundColor:'#ada',
         flexDirection: 'row',
-        borderColor: 'green',
         borderRadius: h('2%'),
+        borderWidth: h('0.1%'),
       }}>
       <SafeAreaView />
-      <TouchableOpacity
-        style={{
-          height: h('10%'),
-          width: '15%',
-          // backgroundColor: '#ada',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}></TouchableOpacity>
       <View
         style={{
-          height: h('10%'),
-          width: '5%',
+          width: '20%',
           // backgroundColor: '#ada',
           justifyContent: 'center',
+          alignItems: 'center',
         }}>
         <Text>{item.quantity}</Text>
       </View>
-      <TouchableOpacity
-        style={{
-          height: h('10%'),
-          width: '10%',
-          alignItems: 'center',
-          // backgroundColor:'#ada',
-          justifyContent: 'center',
-        }}></TouchableOpacity>
       <View
         style={{
-          height: h('10%'),
           width: '50%',
           alignItems: 'center',
-          // backgroundColor:'#fda',
+          // backgroundColor: '#fda',
           justifyContent: 'center',
         }}>
         <Text>{item.name}</Text>
       </View>
       <View
         style={{
-          height: h('10%'),
-          width: '20%',
-          // backgroundColor:'#ada',
+          width: '30%',
+          // backgroundColor: '#ada',
           justifyContent: 'center',
         }}>
         <Text style={{marginLeft: h('2%')}}>$: {item.sum}.00</Text>
@@ -157,15 +130,81 @@ export class FlatChoose extends React.Component {
           flex: 1,
           // backgroundColor: 'brown',
           alignItems: 'center',
-          justifyContent: 'center',
         }}>
+        <View
+          style={{
+            height: h('8%'),
+            width: '100%',
+            // backgroundColor: 'pink',
+            alignItems: 'flex-end',
+            justifyContent: 'center',
+          }}>
+          <Text
+            style={{
+              marginRight: h('2%'),
+              fontSize: 15,
+            }}>
+            SKIP
+          </Text>
+        </View>
+        {/* CHOOSE YOUR PLAN */}
+        <View
+          style={{
+            height: h('5%'),
+            width: '100%',
+            // backgroundColor: '#fff3',
+            alignItems: 'flex-start',
+            justifyContent: 'center',
+          }}>
+          <Text
+            style={{
+              // marginLeft: h('2%'),
+              fontSize: 29,
+              fontWeight: 'bold',
+              color: 'pink',
+            }}>
+            CHOOSE
+          </Text>
+        </View>
+        {/* CHOOSE YOUR PLAN 2ND */}
+        <View
+          style={{
+            height: h('5%'),
+            width: '100%',
+            // backgroundColor: 'white',
+            alignItems: 'flex-start',
+            justifyContent: 'center',
+            // marginBottom: h('5%'),
+          }}>
+          <Text
+            style={{
+              fontSize: 29,
+              fontWeight: 'bold',
+              color: 'pink',
+            }}>
+            YOUR PLAN
+          </Text>
+        </View>
+        <View
+          style={{
+            height: h('8%'),
+            width: '100%',
+            // backgroundColor: 'blue',
+          }}>
+          <Text
+            style={{
+              fontSize: 16,
+            }}>
+            {' '}
+            Lose weight with the plan that suits you best
+          </Text>
+        </View>
         <SafeAreaView />
         <View
           style={{
-            height: h('90%'),
+            height: h('50%'),
+            width: '90%',
             // backgroundColor: 'green',
-            borderWidth: h('.1%'),
-            borderRadius: h('2%'),
           }}>
           <FlatList
             data={this.state.data}
