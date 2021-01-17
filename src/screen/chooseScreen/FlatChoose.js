@@ -148,6 +148,7 @@ export class FlatChoose extends React.Component {
     <View
       style={{
         height: h('8%'),
+        width: '50%',
         // backgroundColor:'#ada',
         flexDirection: 'row',
         borderRadius: h('2%'),
@@ -276,7 +277,7 @@ export class FlatChoose extends React.Component {
         <SafeAreaView />
         <View
           style={{
-            height: h('50%'),
+            height: h('40%'),
             width: '90%',
             // backgroundColor: 'green',
           }}>
@@ -284,6 +285,7 @@ export class FlatChoose extends React.Component {
             data={this.state.data}
             renderItem={({item}) => this.design(item)}
             keyExtractor={(item) => item.name}
+            numColumns={2}
           />
         </View>
         <View
