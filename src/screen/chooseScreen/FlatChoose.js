@@ -142,6 +142,7 @@ export class FlatChoose extends React.Component {
         class: 112,
       },
     ],
+    refreshing: false,
   };
 
   design = (item) => (
@@ -197,6 +198,24 @@ export class FlatChoose extends React.Component {
       }}>
       <Text> {item.name}</Text>
     </View>
+  );
+
+  controlRefreshing = () => {
+    this.setState({refreshing: true});
+    setTimeout(() => {
+      this.setState({refreshing: false}, () => {
+        console.warn('loading');
+      });
+    }, 3000);
+  };
+
+  Sep = () => (
+    <View
+      style={{
+        width: '1%',
+        height: '1%',
+      }}
+    />
   );
   render() {
     return (
@@ -285,6 +304,9 @@ export class FlatChoose extends React.Component {
             data={this.state.data}
             renderItem={({item}) => this.design(item)}
             keyExtractor={(item) => item.name}
+            ItemSeparatorComponent={() => this.Sep()}
+            refreshing={this.state.refreshing}
+            onRefresh={() => this.controlRefreshing()}
             numColumns={2}
           />
         </View>
@@ -300,6 +322,7 @@ export class FlatChoose extends React.Component {
             data={this.state.data1}
             renderItem={({item}) => this.design1(item)}
             keyExtractor={(item) => item.name}
+            ItemSeparatorComponent={() => this.Sep()}
             horizontal={true}
           />
         </View>
